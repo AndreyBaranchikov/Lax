@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-PA-bYi" userLabel="Lax View" customClass="LaxView" customModule="Lax">
+                                <color key="backgroundColor" red="1" green="0.8477782020400032" blue="0.1410997508388353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7n-64-mpt">
+                                <color key="backgroundColor" red="1" green="0.3578356345" blue="0.48243229269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="WFp-4F-oec"/>
+                                </constraints>
+                                <state key="normal" title="A button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fa-PA-bYi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H0z-ol-O3J"/>
+                            <constraint firstItem="H7n-64-mpt" firstAttribute="centerY" secondItem="6fa-PA-bYi" secondAttribute="centerY" id="IIA-du-vMo"/>
+                            <constraint firstItem="H7n-64-mpt" firstAttribute="centerX" secondItem="6fa-PA-bYi" secondAttribute="centerX" id="NPb-ee-r7a"/>
+                            <constraint firstItem="6fa-PA-bYi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WxR-Nd-LsB"/>
+                            <constraint firstAttribute="trailing" secondItem="6fa-PA-bYi" secondAttribute="trailing" id="avP-Vw-Lhv"/>
+                            <constraint firstItem="6fa-PA-bYi" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d7h-JQ-OM5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LaxView" destination="6fa-PA-bYi" id="NMG-b3-uoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306.39999999999998" y="293.70314842578711"/>
+        </scene>
+    </scenes>
+</document>
