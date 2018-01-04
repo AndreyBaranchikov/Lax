@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // LaxView.strengthPoints = 300.0 // Alternative method to set the strength
     }
     
-    func exampleViewsForParallax() -> [UIView] {
+    @objc func exampleViewsForParallax() -> [UIView] {
         
         var exampleViews: [UIView] = []
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         LaxView.viewsToAnimate = []
     }
     
-    func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    @objc func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         
         // Calculate the other view
         var newFrame = self.view.bounds

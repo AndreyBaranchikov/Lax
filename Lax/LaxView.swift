@@ -20,7 +20,7 @@ public class LaxView: UIView {
     // MARK: - Public interface
     
     // Array of views to animate with the parallax effect. The last view in the array will be the most foreground one
-    public var viewsToAnimate: [UIView] = [] {
+    @objc public var viewsToAnimate: [UIView] = [] {
         willSet {
             // Remove the views added previously
             for viewToAnimate in viewsToAnimate {
@@ -47,7 +47,7 @@ public class LaxView: UIView {
     }
     
     // Strenght of the parallax effect using the movement in points
-    public var strengthPoints: Double = LaxStrength.Middle.rawValue {
+    @objc public var strengthPoints: Double = LaxStrength.Middle.rawValue {
         didSet {
             self.setNeedsLayout()
         }
@@ -100,9 +100,9 @@ public class LaxView: UIView {
     }
     
     /**
-    Apply the parallax motion effect to the views to create a parallax effect.
-    Each view will have a different min/max motion effect relative value, so each view moves in a different fashion.
-    This will make the parallax effect more realistic
+     Apply the parallax motion effect to the views to create a parallax effect.
+     Each view will have a different min/max motion effect relative value, so each view moves in a different fashion.
+     This will make the parallax effect more realistic
     */
     
     private func applyParallaxEffect() {
